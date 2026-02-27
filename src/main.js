@@ -25,6 +25,28 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
+// Roadmap step progression animation
+const roadmapObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const roadmapContent = entry.target.querySelector('.roadmap-content');
+      const progressIndicator = entry.target.querySelector('.progress-indicator');
+      if (roadmapContent) {
+        roadmapContent.classList.add('animate-steps');
+      }
+      if (progressIndicator) {
+        progressIndicator.classList.add('animate-steps');
+      }
+    }
+  });
+}, { threshold: 0.3 });
+
+// Observe roadmap section for step animation
+const roadmapSection = document.querySelector('.roadmap');
+if (roadmapSection) {
+  roadmapObserver.observe(roadmapSection);
+}
+
 document.querySelectorAll('.feature-card').forEach(card => {
   card.style.opacity = '0';
   card.style.transform = 'translateY(20px)';

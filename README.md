@@ -14,10 +14,10 @@ contAIn serves as a health monitor for your containers, providing intelligent AI
 
 ## ✨ Key Features
 
-- **🎯 AI Damage Detection** - Smartphone & OCR supported detection for precise damage identification in real-time
-- **📍 Auto Localization** - Automatic localization and categorization of damages on container structures
-- **⚡ Instant Assessment** - Immediate quote generation according to IICL or customer-specific standards
-- **☁️ Cloud-Based Platform** - Scalable, standards-compliant solution accessible from anywhere
+- **🎯 AI Damage Detection** - Automated visual inspection identifies and classifies damages according to ISO standards in real-time.
+- **📍 Damage Localization** - Precise damage analysis including exact location on the container structure and affected area.
+- **📊 Standardized Reporting** - Automatically generated inspection reports with high-resolution evidence and cost estimation.
+- **🌐 Software Platform** - Centralized data aggregation from gate and mobile sources for seamless workflow integration.
 
 ## 🔄 How It Works
 

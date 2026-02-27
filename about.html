@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - contAIn</title>
+    <title>About Us - contAIn</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,74 +21,64 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/about.html" class="active">About</a></li>
                     <li><a href="/solutions.html">Solutions</a></li>
-                    <li><a href="/contact.html" class="active">Contact</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="contact-page-wrapper">
-        <div class="contact-bg-layer">
-            <div class="contact-bg-image"></div>
-            <div class="contact-bg-overlay"></div>
-        </div>
-
-        <div class="contact-content-layer">
-            <!-- Modified the hero inline style so it naturally displays over the background wrapper without its own solid color -->
-            <section class="hero contact-hero" style="padding-bottom: 60px; background-color: transparent;">
-                <div class="container">
-                    <h1>Get in Touch</h1>
-                    <p
-                        style="max-width: 800px; margin: 0 auto; line-height: 1.6; font-size: 1.15rem; color: var(--text-muted);">
-                        Ready to modernize your damage detection?<br>
-                        Contact us for any inquiry about our solutions or for any assistance in your automation project.
-                    </p>
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero-image ai-container">
+                    <img src="/home.png" alt="contAIn" class="hero-img">
                 </div>
-            </section>
-
-            <section class="features contact-features" style="background-color: transparent; padding-top: 0;">
-                <div class="container" style="max-width: 800px;">
-                    <form
-                        style="background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 30px 60px rgba(0,0,0,0.5);">
-                        <div style="margin-bottom: 1.5rem;">
-                            <label for="name"
-                                style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Name</label>
-                            <input type="text" id="name"
-                                style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.2); background: rgba(15, 23, 42, 0.6); color: var(--text-color);"
-                                placeholder="Your Name">
-                        </div>
-                        <div style="margin-bottom: 1.5rem;">
-                            <label for="email"
-                                style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
-                            <input type="email" id="email"
-                                style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.2); background: rgba(15, 23, 42, 0.6); color: var(--text-color);"
-                                placeholder="your@email.com">
-                        </div>
-                        <div style="margin-bottom: 1.5rem;">
-                            <label for="message"
-                                style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
-                            <textarea id="message" rows="5"
-                                style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.2); background: rgba(15, 23, 42, 0.6); color: var(--text-color);"
-                                placeholder="Tell us about your needs..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                    </form>
-
-                    <div
-                        style="margin-top: 4rem; text-align: center; background: rgba(15, 23, 42, 0.5); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.05); backdrop-filter: blur(5px);">
-                        <h3>Contact Information</h3>
-                        <p style="color: var(--text-muted); margin-top: 1rem;">
-                            <strong style="color: var(--text-color);">Email:</strong> team@contain-gmbh.com<br>
-                            <strong style="color: var(--text-color);">Phone:</strong> +49 15253780351<br>
-                            <strong style="color: var(--text-color);">Address:</strong> Leibnizstraße 4, 24118 Kiel,
-                            Germany
+                <div class="about-intro">
+                    <h1>About us</h1>
+                    <div class="intro-text">
+                        <p>cont<span style="color: var(--primary-color);">AI</span>n was born when three students during
+                            their master’s studies recognized that
+                            traditional container monitoring couldn't keep pace with an increasingly digital world. What
+                            global logistics through intelligence.
                         </p>
+                        <p>Our solution goal is to provide the precision needed to secure and monitor the world’s supply
+                            chains, making it possible for ports and operators to work with more confidence and clarity
+                            than ever before.</p>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <section class="founders-section">
+            <div class="container">
+                <h2>Founders</h2>
+                <div class="founders-grid">
+                    <div class="founder-card">
+                        <div class="founder-photo-placeholder">
+                            <span>Photo</span>
+                        </div>
+                        <h3>Tim Oldörp</h3>
+                        <p>Co-founder</p>
+                    </div>
+                    <div class="founder-card">
+                        <div class="founder-photo-placeholder">
+                            <span>Photo</span>
+                        </div>
+                        <h3>Tim Prause</h3>
+                        <p>Co-founder</p>
+                    </div>
+                    <div class="founder-card">
+                        <div class="founder-photo-placeholder">
+                            <span>Photo</span>
+                        </div>
+                        <h3>Sai Mohit</h3>
+                        <p>Co-founder</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer id="footer" data-theme="dark" class="xd-global-footer">

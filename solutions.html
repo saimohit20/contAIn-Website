@@ -21,6 +21,7 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
                     <li><a href="/solutions.html" class="active">Solutions</a></li>
                     <li><a href="/contact.html">Contact</a></li>
                 </ul>
@@ -32,12 +33,30 @@
         <section class="hero" style="padding-bottom: 60px;">
             <div class="container">
                 <h1>Cont<span style="color: var(--primary-color);">AI</span>n Solutions</h1>
-                <p style="text-align: left; max-width: 1000px;">Transforming standard cameras into intelligent damage
-                    detection agents. We help logistics companies
-                    modernize their container inspection process without replacing existing hardware. Our AI works with
-                    your current camera setup to automatically identify and classify damages in real-time. This means
-                    faster gate processing, fewer disputes, and better data for your operations team. No manual
-                    inspections, no missed damages, just smart automation that saves time and money.</p>
+                <div class="about-hero-image ai-container" style="margin-top: 2rem; margin-bottom: 3rem;">
+                    <img src="/ai-gate-detection.png" alt="AI Container Diagnostic at Port Gate" class="hero-img">
+                    <div class="ai-overlay">
+                        <div class="scanning-beam"></div>
+                        <div class="detection-box" style="top: 48%; left: 28%; width: 45px; height: 35px;">
+                            <div class="detection-label">DENT: 95%</div>
+                        </div>
+                        <div class="detection-box"
+                            style="top: 65%; left: 42%; width: 55px; height: 40px; animation-delay: 1.2s;">
+                            <div class="detection-label">CORROSION: 92%</div>
+                        </div>
+                        <div class="status-indicator">
+                            <span class="status-dot"></span> GATE 04 SYSTEM ACTIVE
+                        </div>
+                    </div>
+                </div>
+                <p style="text-align: left; max-width: 1000px; font-size: 1.3rem; line-height: 1.8;">Transforming
+                    standard
+                    cameras into intelligent damage
+                    detection agents. We help logistics companies modernize their container inspection process without
+                    replacing existing hardware. Our AI works with your current camera setup to automatically identify
+                    and classify damages in real-time. This means faster gate processing, fewer disputes, and better
+                    data for your operations team. No manual inspections, no missed damages, just smart automation that
+                    saves time and money.</p>
             </div>
         </section>
 
@@ -45,35 +64,40 @@
             <div class="container">
                 <div class="features-grid">
                     <div class="feature-card gradient-accent">
-                        <h3>Gate Automation</h3>
-                        <p>Automate processing and validation of truck and container data. Our OCR technology reads
-                            container numbers, ISO codes, truck license plates, ILU numbers, yellow plates, and more.
-                        </p>
-                    </div>
-                    <div class="feature-card gradient-accent">
                         <h3>AI Damage Detection</h3>
-                        <p>End-to-end solution from container information to damage reporting. Eliminates the need for
-                            supervisors to review undamaged containers, saving both time and money.</p>
+                        <p>Automated visual inspection of containers from standard camera images. Identifies damaged vs.
+                            undamaged containers, detects and classifies damage types according to ISO standards.
+                            Removes the need for manual review of undamaged containers and reduces inspection time and
+                            operational cost.</p>
                     </div>
                     <div class="feature-card gradient-accent">
-                        <h3>3D Container Visual</h3>
-                        <p>Interactive 3D models to visualize damaged containers. Get a clear spatial understanding of
-                            where damages are located on the structure.</p>
+                        <h3>Damage Localization & Classification</h3>
+                        <p>Precise damage analysis including exact damage location on the container structure, damage
+                            extent and affected area, and ISO-compliant damage and repair classification. Ensures
+                            consistent, defensible inspection results.</p>
                     </div>
                     <div class="feature-card gradient-accent">
-                        <h3>Complete Reporting</h3>
-                        <p>Comprehensive reports with cost estimation. Includes damage type, repair costs, precise
-                            location, damage area calculations, and high-resolution photos.</p>
+                        <h3>3D Container Visualization</h3>
+                        <p>Interactive 3D container models that visualize damage locations spatially on the container.
+                            Supports repair planning, audits, and dispute resolution.</p>
                     </div>
                     <div class="feature-card gradient-accent">
-                        <h3>Web & Mobile App</h3>
-                        <p>Intuitive software for inspectors to scan containers and generate reports instantly using
-                            smartphones or tablets.</p>
+                        <h3>Standardized Damage Reporting</h3>
+                        <p>Automatically generated inspection reports including damage type and classification, damage
+                            location and affected area, high-resolution image evidence, and repair cost estimation.
+                            Creates uniform documentation across inspectors, sites, and terminals.</p>
                     </div>
                     <div class="feature-card gradient-accent">
-                        <h3>Automation Software</h3>
-                        <p>We provide essential data as well as automation software applications empowering the digital
-                            transformation of container handling processes.</p>
+                        <h3>Mobile Inspection App</h3>
+                        <p>Mobile solution for manual inspections. Inspect containers using smartphones or tablets with
+                            instant generation of ISO-compliant damage reports. Supports yards, depots, and non-gate
+                            inspection scenarios.</p>
+                    </div>
+                    <div class="feature-card gradient-accent">
+                        <h3>Software Platform</h3>
+                        <p>Central software layer that aggregates inspection data from gate and mobile sources,
+                            integrates into existing operational and M&R workflows, and enables digital, traceable
+                            container inspection processes.</p>
                     </div>
                 </div>
 
@@ -84,30 +108,80 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h4>contAIn</h4>
-                    <p style="color: var(--text-muted);">Revolutionizing logistics with AI.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Solutions</h4>
-                    <ul>
-                        <li><a href="/solutions.html">Gate Automation</a></li>
-                        <li><a href="/solutions.html">Damage Detection</a></li>
+    <footer id="footer" data-theme="dark" class="xd-global-footer">
+        <div class="xd-global-footer-container">
+            <div class="xd-global-footer-main">
+                <div class="xd-global-footer-brand">
+                    <div class="xd-global-footer-logo">cont<span>AI</span>n</div>
+                    <ul aria-label="Social media links" class="xd-global-footer-social">
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg></li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.14 1 12 1 12s0 3.86.46 5.58a2.78 2.78 0 0 0 1.94 2c1.72.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.86 23 12 23 12s0-3.86-.46-5.58z" />
+                                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                            </svg></li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg></li>
+                        <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4l11.73 16h4.27l-11.73-16z" />
+                                <path d="M4 20l6.76-6.76" />
+                                <path d="M19 4l-6.76 6.76" />
+                            </svg></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="/contact.html">About Us</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
-                    </ul>
+                <div class="xd-global-footer-links">
+                    <div class="xd-footer-nav-section">
+                        <h2>About cont<span style="color: var(--primary-color);">AI</span>n</h2>
+                        <ul>
+                            <li><a href="/about.html">About us</a></li>
+                            <li><span>Technology</span></li>
+                            <li><span>News & press</span></li>
+                        </ul>
+                    </div>
+                    <div class="xd-footer-nav-section">
+                        <h2>Solutions</h2>
+                        <ul>
+                            <li><a href="/solutions.html">AI Detection</a></li>
+                            <li><a href="/solutions.html">3D Visualization</a></li>
+                            <li><a href="/solutions.html">Mobile App</a></li>
+                        </ul>
+                    </div>
+                    <div class="xd-footer-nav-section">
+                        <h2>Get in touch</h2>
+                        <ul>
+                            <li><a href="/contact.html">Contact</a></li>
+                            <li><span>Locations</span></li>
+                        </ul>
+                    </div>
+                    <div class="xd-footer-nav-section">
+                        <h2>Careers</h2>
+                        <ul>
+                            <li><span>Jobs & careers</span></li>
+                            <li><span>Open roles</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 contAIn. All rights reserved.</p>
+            <div class="xd-global-footer-legal">
+                <span>© cont<span style="color: var(--primary-color);">AI</span>n 2026</span>
+                <div class="xd-footer-legal-links">
+                    <span>Corporate information</span>
+                    <span>Privacy notice</span>
+                    <span>Cookie notice</span>
+                    <span>Terms of use</span>
+                </div>
             </div>
         </div>
     </footer>

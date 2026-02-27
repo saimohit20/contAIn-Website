@@ -21,6 +21,7 @@
       <nav>
         <ul class="nav-links">
           <li><a href="/" class="active">Home</a></li>
+          <li><a href="/about.html">About</a></li>
           <li><a href="/solutions.html">Solutions</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
@@ -30,10 +31,15 @@
 
   <main>
     <section class="hero">
-      <div class="container">
+      <div class="hero-bg-container">
+        <div class="hero-bg-slide slide-1" style="background-image: url('/2.png');"></div>
+        <div class="hero-bg-slide slide-2" style="background-image: url('/4.png');"></div>
+        <div class="hero-bg-overlay"></div>
+      </div>
+      <div class="container hero-content-layer">
         <h1><span class="animate-word">Your</span> <span class="animate-word">Containers</span><br><span
             class="animate-word">Our</span> <span class="animate-word">Intelligence</span></h1>
-        <p>contAIn is the health monitor for your containers. We provide intelligent AI solutions that automatically
+        <p>cont<span style="color: var(--primary-color);">AI</span>n is the health monitor for your containers. We provide intelligent AI solutions that automatically
           detect damages, reducing unnecessary manual effort to save you time and money.</p>
         <div class="hero-btns">
           <a href="/solutions.html" class="btn btn-primary">Our Solutions</a>
@@ -45,9 +51,13 @@
     <section class="roadmap">
       <div class="container">
         <div class="section-header">
-          <h2>How contAIn Works</h2>
+          <h2>How cont<span style="color: var(--primary-color);">AI</span>n Works</h2>
           <p>Transforming standard cameras into intelligent damage detection agents. Our AI continuously monitors your
             container fleet, providing real-time insights and automated assessments for efficient operations.</p>
+          <div class="progress-indicator">
+            <div class="progress-bar"></div>
+            <span class="progress-text">Workflow Progress</span>
+          </div>
         </div>
         <div class="roadmap-port-container">
           <div class="roadmap-bg-wrapper">
@@ -126,119 +136,233 @@
     <section class="features">
       <div class="container">
         <div class="section-header">
-          <h2>Why Choose contAIn?</h2>
+          <h2>Why Choose cont<span style="color: var(--primary-color);">AI</span>n?</h2>
           <p>We bring cutting-edge computer vision to logistics, ensuring no damage goes unnoticed. Our platform
             integrates seamlessly with your existing infrastructure, delivering enterprise-grade accuracy without
             disrupting daily operations.</p>
         </div>
-        <div class="features-list">
-          <div class="feature-item glass-panel">
-            <div class="feature-number">01</div>
-            <div class="feature-detail">
+        <div class="solutions-grid">
+          <div class="solution-card">
+            <div class="solution-image">
+              <img src="/info1.png" alt="AI Damage Detection"
+                style="width:100%; height:100%; object-fit:cover; display:block;">
+            </div>
+            <div class="solution-content">
               <h3>AI Damage Detection</h3>
-              <p>Smartphone & OCR supported detection for precise damage identification in real-time, functioning like a
-                health check for your assets.</p>
+              <p>Automated visual inspection identifies damaged vs. undamaged containers and classifies damages
+                according to ISO standards in real-time.</p>
+              <a href="/solutions.html" class="solution-link">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 16 16 12 12 8"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </a>
             </div>
           </div>
-          <div class="feature-item glass-panel">
-            <div class="feature-number">02</div>
-            <div class="feature-detail">
-              <h3>Auto Localization</h3>
-              <p>Automatic localization and categorization of damages on container structures, pinpointing issues with
-                surgical precision.</p>
+
+          <div class="solution-card">
+            <div class="solution-image">
+              <img src="/info2.png" alt="Damage Localization"
+                style="width:100%; height:100%; object-fit:cover; display:block;">
+            </div>
+            <div class="solution-content">
+              <h3>Damage Localization</h3>
+              <p>Precise analysis including exact damage location on the structure, damage extent, and ISO-compliant
+                repair classification.</p>
+              <a href="/solutions.html" class="solution-link">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 16 16 12 12 8"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </a>
             </div>
           </div>
-          <div class="feature-item glass-panel">
-            <div class="feature-number">03</div>
-            <div class="feature-detail">
-              <h3>Instant Assessment</h3>
-              <p>Immediate quote generation according to IICL or customer-specific standards, removing delays from the
-                billing process.</p>
+
+          <div class="solution-card">
+            <div class="solution-image">
+              <img src="/info3.png" alt="3D Visualization"
+                style="width:100%; height:100%; object-fit:cover; display:block;">
+            </div>
+            <div class="solution-content">
+              <h3>3D Visualization</h3>
+              <p>Interactive 3D container models that visualize damage locations spatially, supporting repair planning
+                and dispute resolution.</p>
+              <a href="/solutions.html" class="solution-link">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 16 16 12 12 8"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </a>
             </div>
           </div>
-          <div class="feature-item glass-panel">
-            <div class="feature-number">04</div>
-            <div class="feature-detail">
-              <h3>Cloud-Based Platform</h3>
-              <p>Scalable, standards-compliant solution accessible from anywhere, designed to grow with your global
-                operations.</p>
+
+          <div class="solution-card">
+            <div class="solution-image">
+              <img src="/info4.png" alt="Standardized Reporting"
+                style="width:100%; height:100%; object-fit:cover; display:block;">
+            </div>
+            <div class="solution-content">
+              <h3>Standardized Reporting</h3>
+              <p>Automatically generated inspection reports with high-resolution evidence, mapping coordinates, and
+                complete cost estimations.</p>
+              <a href="/solutions.html" class="solution-link">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 16 16 12 12 8"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-image">
+              <img src="/info5.png" alt="Mobile Inspection App"
+                style="width:100%; height:100%; object-fit:cover; display:block;">
+            </div>
+            <div class="solution-content">
+              <h3>Mobile Inspection App</h3>
+              <p>Mobile solution for manual inspections with instant generation of ISO-compliant reports on smartphones
+                or tablets.</p>
+              <a href="/solutions.html" class="solution-link">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 16 16 12 12 8"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-image">
+              <img src="/info6.png" alt="Software Platform"
+                style="width:100%; height:100%; object-fit:cover; display:block;">
+            </div>
+            <div class="solution-content">
+              <h3>Software Platform</h3>
+              <p>Central software layer integrating gate and mobile data into your existing operational and M&R
+                workflows.</p>
+              <a href="/solutions.html" class="solution-link">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 16 16 12 12 8"></polyline>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="testimonials">
-      <div class="container">
-        <div class="section-header">
-          <h2>Trusted by Industry Leaders</h2>
+    <section class="split-service-section">
+      <div class="container split-service-container">
+        <div class="split-service-text">
+          <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+            <h2>Seamless integration, from start to finish</h2>
+          </div>
+          <div class="split-text-content">
+            <ul>
+              <li>100% in-house AI models &amp; software.</li>
+              <li>Plug-and-play with your existing Gate OS and TOS zero hardware lock-in.</li>
+              <li>Fast deployment, rapid ROI and 24/7 system monitoring.</li>
+            </ul>
+            <p>We partner with you to fully automate your damage detection workflows.</p>
+          </div>
+          <a href="/contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Get in touch</a>
         </div>
-        <div class="testimonial-grid">
-          <div class="testimonial-card">
-            <div class="quote-icon">"</div>
-            <p class="testimonial-text">contAIn has revolutionized our gate operations. Damage disputes have dropped by
-              80% since implementation.</p>
-            <div class="author">
-              <div class="author-info">
-                <h5>John Smith</h5>
-                <p>Operations Director, Global Ports</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="quote-icon">"</div>
-            <p class="testimonial-text">The accuracy of the damage detection is incredible. It sees things our manual
-              inspectors often miss.</p>
-            <div class="author">
-              <div class="author-info">
-                <h5>Sarah Chen</h5>
-                <p>Terminal Manager, Pacific Logistics</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="quote-icon">"</div>
-            <p class="testimonial-text">Seamless integration with our existing GOS. The ROI was visible within the first
-              month.</p>
-            <div class="author">
-              <div class="author-info">
-                <h5>Mike Johnson</h5>
-                <p>CTO, Atlantic Terminals</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Right side is now just an empty structural div, the image will be an absolute background attached to the section -->
+        <div class="split-service-spacer"></div>
       </div>
+      <div class="split-service-bg-right"></div>
     </section>
-
-
 
   </main>
 
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-col">
-          <h4>contAIn</h4>
-          <p style="color: var(--text-muted);">Revolutionizing logistics with AI.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Solutions</h4>
-          <ul>
-            <li><a href="/solutions.html">Gate Automation</a></li>
-            <li><a href="/solutions.html">Damage Detection</a></li>
+
+  <footer id="footer" data-theme="dark" class="xd-global-footer">
+    <div class="xd-global-footer-container">
+      <div class="xd-global-footer-main">
+        <div class="xd-global-footer-brand">
+          <div class="xd-global-footer-logo">cont<span>AI</span>n</div>
+          <ul aria-label="Social media links" class="xd-global-footer-social">
+            <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></li>
+            <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.14 1 12 1 12s0 3.86.46 5.58a2.78 2.78 0 0 0 1.94 2c1.72.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.86 23 12 23 12s0-3.86-.46-5.58z" />
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+              </svg></li>
+            <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg></li>
+            <li><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4l11.73 16h4.27l-11.73-16z" />
+                <path d="M4 20l6.76-6.76" />
+                <path d="M19 4l-6.76 6.76" />
+              </svg></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="/contact.html">About Us</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-          </ul>
+        <div class="xd-global-footer-links">
+          <div class="xd-footer-nav-section">
+            <h2>About cont<span style="color: var(--primary-color);">AI</span>n</h2>
+            <ul>
+              <li><a href="/about.html">About us</a></li>
+              <li><span>Technology</span></li>
+              <li><span>News & press</span></li>
+            </ul>
+          </div>
+          <div class="xd-footer-nav-section">
+            <h2>Solutions</h2>
+            <ul>
+              <li><a href="/solutions.html">AI Detection</a></li>
+              <li><a href="/solutions.html">3D Visualization</a></li>
+              <li><a href="/solutions.html">Mobile App</a></li>
+            </ul>
+          </div>
+          <div class="xd-footer-nav-section">
+            <h2>Get in touch</h2>
+            <ul>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><span>Locations</span></li>
+            </ul>
+          </div>
+          <div class="xd-footer-nav-section">
+            <h2>Careers</h2>
+            <ul>
+              <li><span>Jobs & careers</span></li>
+              <li><span>Open roles</span></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>&copy; 2025 contAIn. All rights reserved.</p>
+      <div class="xd-global-footer-legal">
+        <span>© contAIn 2026</span>
+        <div class="xd-footer-legal-links">
+          <span>Corporate information</span>
+          <span>Privacy notice</span>
+          <span>Cookie notice</span>
+          <span>Terms of use</span>
+        </div>
       </div>
     </div>
   </footer>
